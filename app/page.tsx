@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={"flex h-full flex-col"}>
+      {/* 상단 메뉴바 */}
       <div
         className={
           "flex h-[80px] w-full flex-row items-center justify-between bg-black bg-gradient-to-bl from-black to-purple-950 px-20"
@@ -34,34 +35,33 @@ export default function Home() {
           <div>ss</div>
         </div>
       </div>
-      <div className="relative">
-        <Image
-          src={"/bg.jpg"}
-          alt={"bg"}
-          width={1920}
-          height={1080}
-          className={"w-full"}
-        />
-        <div className="absolute left-20 right-20 top-20 flex flex-col items-start justify-center gap-4">
+      {/* 본문 */}
+      <div className="flex h-full flex-col items-center justify-center bg-black bg-gradient-to-bl from-black to-purple-950">
+        <div className="mb-4 mt-20 flex flex-col gap-4 sm:w-[860px]">
           <div
             className={
-              "flex w-full flex-col gap-4 rounded-lg bg-black bg-opacity-50 px-4 py-1 shadow-md"
+              "flex w-full items-center justify-between gap-4 rounded-lg bg-black bg-opacity-50 p-6 px-4 py-1 shadow-md"
             }
           >
             <div>
-              <p className="text-3xl font-bold text-yellow-500">
-                정보보안 전문가 / 프로그래머
-              </p>
+              <div>
+                <p className="text-3xl font-bold text-yellow-500">
+                  정보보안 전문가 / 프로그래머
+                </p>
 
-              <p className="text-3xl font-bold text-white">이병호</p>
+                <p className="text-3xl font-bold text-white">이병호</p>
+              </div>
+              <div>
+                <p className="text-xl font-bold text-white">
+                  kingelip@cyber-luna.com
+                </p>
+              </div>
             </div>
             <div>
-              <p className="text-xl font-bold text-white">
-                kingelip@cyber-luna.com
-              </p>
+              <Image src={"/user.png"} alt={"user"} width={80} height={80} />
             </div>
           </div>
-          <div className={"flex w-full justify-between gap-2"}>
+          <div className={"flex justify-between gap-2"}>
             <div className={"rounded-lg bg-black bg-opacity-50 p-4 shadow-md"}>
               <p className={"font-bold text-white"}>정보보안</p>
               <br />
@@ -109,7 +109,7 @@ export default function Home() {
                 2023.01 ~ 2023.06 : SSL/TLS 인증서 관리 시스템
               </p>
               <p className={"text-white"}>
-                2023.06 ~ 2025.12 : 미 정부기관 AI 질병 탐지 시스템
+                2023.06 ~ 2025.12 : 美정부기관 AI 질병 탐지 시스템
               </p>
             </div>
           </div>
@@ -121,11 +121,101 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
-      <div
-        className={"h-full w-full bg-gradient-to-b from-black to-purple-950"}
-      >
-        s
+        <div className={"hidden sm:block sm:w-[860px]"}>
+          <div className={"p-5 text-center font-bold text-white"}>스킬정보</div>
+          <div className={"flex w-full items-center gap-5 p-2"}>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/TypeScript.svg"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/Python.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/Next.js.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/React.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/Tailwind CSS.svg"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
+
+            <div className={"font-bold text-white"}>주력언어</div>
+          </div>
+          <div className={"flex w-full items-center justify-end gap-5 p-6"}>
+            <div className={"font-bold text-white"}>운영경험</div>
+
+            <div
+              className={
+                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
+              }
+            >
+              DRM
+            </div>
+            <div
+              className={
+                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
+              }
+            >
+              SIEM
+            </div>
+            <div
+              className={
+                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
+              }
+            >
+              백신
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/Jenkins.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/crowdstrike.png"}
+                className={"shrink-0"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/Cloudflare.svg"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
+          </div>
+          <div className={"flex w-full items-center justify-start gap-5 p-2"}>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/AWS.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/Argo CD.svg"} alt={"aws"} width={60} height={60} />
+            </div>
+
+            <div
+              className={
+                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
+              }
+            >
+              SIEM
+            </div>
+            <div className={"font-bold text-white"}>사용경험</div>
+          </div>
+        </div>
       </div>
     </div>
   );
