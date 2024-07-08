@@ -156,6 +156,23 @@ export default function Home() {
           <div className={"flex w-full items-center justify-end gap-5 p-6"}>
             <div className={"font-bold text-white"}>운영경험</div>
 
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/crowdstrike.png"}
+                className={"shrink-0"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image
+                src={"/Cloudflare.svg"}
+                alt={"aws"}
+                width={60}
+                height={60}
+              />
+            </div>
             <div
               className={
                 "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
@@ -177,26 +194,6 @@ export default function Home() {
             >
               백신
             </div>
-            <div className={"flex rounded-full bg-white p-4"}>
-              <Image src={"/Jenkins.svg"} alt={"aws"} width={60} height={60} />
-            </div>
-            <div className={"flex rounded-full bg-white p-4"}>
-              <Image
-                src={"/crowdstrike.png"}
-                className={"shrink-0"}
-                alt={"aws"}
-                width={60}
-                height={60}
-              />
-            </div>
-            <div className={"flex rounded-full bg-white p-4"}>
-              <Image
-                src={"/Cloudflare.svg"}
-                alt={"aws"}
-                width={60}
-                height={60}
-              />
-            </div>
           </div>
           <div className={"flex w-full items-center justify-start gap-5 p-2"}>
             <div className={"flex rounded-full bg-white p-4"}>
@@ -205,13 +202,8 @@ export default function Home() {
             <div className={"flex rounded-full bg-white p-4"}>
               <Image src={"/Argo CD.svg"} alt={"aws"} width={60} height={60} />
             </div>
-
-            <div
-              className={
-                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
-              }
-            >
-              SIEM
+            <div className={"flex rounded-full bg-white p-4"}>
+              <Image src={"/Jenkins.svg"} alt={"aws"} width={60} height={60} />
             </div>
             <div className={"font-bold text-white"}>사용경험</div>
           </div>
