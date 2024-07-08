@@ -58,7 +58,13 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <Image src={"/user.png"} alt={"user"} width={80} height={80} />
+              <Image
+                src={"/user.webp"}
+                alt={"user"}
+                width={80}
+                height={80}
+                className={"rounded-full border-4 border-green-500"}
+              />
             </div>
           </div>
           <div
