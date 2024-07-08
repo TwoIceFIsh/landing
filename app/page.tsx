@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       {/* 본문 */}
       <div className="flex h-full flex-col items-center justify-center bg-black bg-gradient-to-bl from-black to-purple-950">
-        <div className="mb-4 flex flex-col gap-4 sm:mt-20 sm:w-[800]">
+        <div className="flex flex-col gap-4 sm:mt-20 sm:w-[800]">
           <div
             className={
               "flex w-full items-center justify-between gap-4 rounded-lg bg-black bg-opacity-50 p-6 px-4 py-1 shadow-md"
@@ -154,7 +154,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={"hidden sm:block sm:w-[860px]"}>
+        <div className={"hidden sm:flex sm:w-[800] sm:flex-col"}>
           <div className={"p-5 text-center font-bold text-white"}>스킬정보</div>
           <div className={"flex w-full items-center gap-5 p-2"}>
             <div className={"flex rounded-full bg-white p-4"}>
