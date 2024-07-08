@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       {/* 본문 */}
       <div className="flex h-full flex-col items-center justify-center bg-black bg-gradient-to-bl from-black to-purple-950">
-        <div className="mb-4 mt-20 flex flex-col gap-4 sm:w-[860px]">
+        <div className="mb-4 flex flex-col gap-4 sm:mt-20 sm:w-[800]">
           <div
             className={
               "flex w-full items-center justify-between gap-4 rounded-lg bg-black bg-opacity-50 p-6 px-4 py-1 shadow-md"
@@ -61,21 +61,48 @@ export default function Home() {
               <Image src={"/user.png"} alt={"user"} width={80} height={80} />
             </div>
           </div>
-          <div className={"flex justify-between gap-2"}>
+          <div
+            className={
+              "flex flex-col justify-between gap-2 text-sm sm:flex-row"
+            }
+          >
             <div className={"rounded-lg bg-black bg-opacity-50 p-4 shadow-md"}>
               <p className={"font-bold text-white"}>정보보안</p>
+
+              <p className={"text-sm font-bold text-white underline"}>
+                취약점 분석 및 침해사고 대응 주력
+              </p>
               <br />
               <p className={"font-bold text-white"}>이글루시큐리티</p>
               <p className={"text-white"}>2019.03 ~ 2020.03 : 해외기술팀</p>
+              <p className={"text-xs text-white"}>- 일본지사 취약점 점검</p>
+              <p className={"text-xs text-white"}>- 한국지사 취약점 점검</p>
+              <br />
               <p className={"text-white"}>
                 2020.03 ~ 2021.03 : 가급 국가기관 사이버안전센터
               </p>
+              <p className={"text-xs text-white"}>
+                - 사고대응 및 침해사고 예방
+              </p>
+              <p className={"text-xs text-white"}>- 산하기관 웹 취약점 점검</p>
+              <p className={"text-xs text-white"}>
+                - 보안현황 하위기관 전파 및 교육
+              </p>
+              <br />
               <p className={"text-white"}>
                 2021.03 ~ 2022.05 : S-OIL 보안관제팀
               </p>
+              <p className={"text-xs text-white"}>
+                - 보안관제 및 침해사고 예방
+              </p>
+              <p className={"text-xs text-white"}>- 정보보안 인텔리전스 활동</p>
               <br />
               <p className={"font-bold text-white"}>그라비티</p>
               <p className={"text-white"}>2022.05 ~ 2024.03 : 정보보안Unit</p>
+              <p className={"text-xs text-white"}>- 대외 취약점 분석</p>
+              <p className={"text-xs text-white"}>- EDR/백신/CloudFlare 운영</p>
+              <p className={"text-xs text-white"}>- 침해사고 대응 및 분석</p>
+              <p className={"text-xs text-white"}>- 정보보안 인텔리전스 활동</p>
               <br />
               <p className={"font-bold text-white"}>사이버루나</p>
               <p className={"text-white"}>2024.03 ~ 2024.12 : 그레이 해커</p>
