@@ -112,7 +112,7 @@ export default function Home() {
             <br />
             <p className={"text-white"}>2021.03 ~ 2022.05 : SOC Helper</p>
             <p className={"text-xs text-white"}>
-              - FireEye SIEM IOC 데이터 정제 툴
+              <Description>FireEye SIEM IOC 데이터 정제 툴</Description>
             </p>
             <br />
             <p className={"text-white"}>2022.01 ~ 2022.03 : 정보보안메일링</p>
