@@ -125,7 +125,11 @@ export default function Home() {
             <p className={"text-white"}>
               2022.05 ~ 2022.12 : CrowdStrike Assist
             </p>
-            <Description>EDR 분석 보조 툴</Description>
+            <Description
+              href={"https://gitlab.cyber-luna.com/cyber-luna/crowdstrike"}
+            >
+              EDR 분석 보조 툴
+            </Description>
 
             <br />
             <p className={"text-white"}>2023.01 ~ 2023.06 : C-Checker</p>
