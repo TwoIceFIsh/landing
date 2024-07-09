@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "h-full bg-gradient-to-bl from-black to-purple-950",
+          "h-full bg-gradient-to-bl from-black to-green-950",
         )}
       >
         <Header />
