@@ -22,7 +22,7 @@ export default function Home() {
           <div>
             <div className={"text-2xl"}>
               <p className="font-bold text-yellow-500 sm:text-3xl">
-                정보보안 전문가 / 프로그래머
+                정보보안전문가 / 프로그래머
               </p>
 
               <p className="font-bold text-white sm:text-3xl">이병호</p>
