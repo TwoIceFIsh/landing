@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div
       className={
-        "flex h-16 items-center justify-center bg-gradient-to-bl from-black to-green-950"
+        "flex h-16 w-full items-center justify-center bg-gradient-to-bl from-black to-green-950"
       }
     >
       <div
