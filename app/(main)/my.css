@@ -375,7 +375,7 @@ section {
 
 @keyframes movement {
     0% {
-        top: 0px;
+        top: 1px;
         left: -20px;
     }
 
@@ -512,10 +512,10 @@ section {
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     }
     50% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
     }
 }
 
 .glowing-effect {
-    animation: glow 2s ease-in-out infinite;
+    animation: glow 1.2s ease-in-out infinite;
 }
