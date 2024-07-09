@@ -91,7 +91,10 @@ export default function Home() {
               "h-full w-full rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:ring-green-400"
             }
           >
-            <p className={"font-bold text-white"}>프로그래밍</p>
+            <p className={"font-bold text-white"}>프로그래밍(풀스택/인프라)</p>
+            <p className={"text-sm font-bold text-white underline"}>
+              웹 인터페이스 기반 서비스 기획 및 개발 주력
+            </p>
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
             <p className={"text-white"}>2018.08 ~ 2018.12 : iFarm</p>
