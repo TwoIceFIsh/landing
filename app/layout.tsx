@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Orbit } from "next/font/google";
+import { Nanum_Gothic_Coding } from "next/font/google";
 
-const inter = Orbit({
+const inter = Nanum_Gothic_Coding({
   weight: "400",
   subsets: ["latin"],
 });
