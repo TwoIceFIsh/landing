@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { ExternalLinkIcon, LockIcon } from "lucide-react";
+import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
@@ -45,7 +48,7 @@ export default function Home() {
         >
           <div
             className={
-              "w-full rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:cursor-pointer hover:ring-green-400"
+              "w-full rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:ring-green-400"
             }
           >
             <p className={"font-bold text-white"}>정보보안</p>
@@ -81,21 +84,28 @@ export default function Home() {
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
             <p className={"text-white"}>2024.03 ~ 2024.12 : 그레이 해커</p>
+            <Description>비공개 확동</Description>
           </div>
           <div
             className={
-              "h-full w-full rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:cursor-pointer hover:ring-green-400"
+              "h-full w-full rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:ring-green-400"
             }
           >
             <p className={"font-bold text-white"}>프로그래밍</p>
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
             <p className={"text-white"}>2018.08 ~ 2018.12 : iFarm</p>
-            <p className={"text-xs text-white"}>- 스마트 팜 제어 시스템</p>
+            <Description
+              href={
+                "https://github.com/TwoIceFIsh/old_WEB-Control-devices-by-Web-Controller"
+              }
+            >
+              스마트 팜 제어 시스템
+            </Description>
             <p className={"text-white"}>2019.01 ~ 2019.03 : MalQ</p>
-            <p className={"text-xs text-white"}>
-              - 악성프로그램 정적 분석 프로그램
-            </p>
+            <Description href={"https://github.com/TwoIceFIsh/old_PE_Viewer"}>
+              악성프로그램 정적 분석 프로그램
+            </Description>
             <br />
             <p className={"text-white"}>2021.03 ~ 2022.05 : SOC Helper</p>
             <p className={"text-xs text-white"}>
@@ -103,35 +113,45 @@ export default function Home() {
             </p>
             <br />
             <p className={"text-white"}>2022.01 ~ 2022.03 : 정보보안메일링</p>
-            <p className={"text-xs text-white"}>
-              - 정보보안 조기경보 인텔리전스 시스템
-            </p>
+            <Description href={"https://github.com/TwoIceFIsh/RSS-Boho"}>
+              정보보안 조기경보 인텔리전스 시스템
+            </Description>
             <br />
 
             <p className={"text-white"}>
               2022.05 ~ 2022.12 : CrowdStrike Assist
             </p>
-            <p className={"text-xs text-white"}> - EDR 분석 보조 시스템</p>
+            <Description>EDR 분석 보조 툴</Description>
 
             <br />
-            <p className={"text-white"}>2023.01 ~ 2023.06 : SSLM</p>
-            <p className={"text-xs text-white"}>- SSL/TLS 인증서 관리 시스템</p>
+            <p className={"text-white"}>2023.01 ~ 2023.06 : C-Checker</p>
+            <Description
+              href={"https://github.com/TwoIceFIsh/cloudflare-dns-checker"}
+            >
+              CloudFlare DNS 관리 시스템
+            </Description>
+            <p className={"text-white"}>2023.06 ~ 2023.12 : SSLM</p>
+            <Description href={"https://github.com/TwoIceFIsh/sslm"}>
+              SSL/TLS 인증서 관리 시스템
+            </Description>
 
             <br />
             <p className={"text-white"}>2023.06 ~ 2025.12 : AIRA</p>
-            <p className={"text-xs text-white"}>
-              - 美정부기관 AI 질병 탐지 시스템
-            </p>
+            <Description>美정부기관 AI 질병 탐지 시스템</Description>
             <br />
 
             <p className={"text-white"}>2024.06 ~ 2025.12 : 리치에이블</p>
-            <p className={"text-xs text-white"}> - 금융 SNS 플랫폼</p>
+            <Description
+              href={"https://github.com/TwoIceFIsh/richable-web-server"}
+            >
+              금융 SNS 플랫폼
+            </Description>
           </div>
         </div>
         {/* 세번째 박스*/}
         <div
           className={
-            "flex h-full w-full items-center justify-between gap-2 rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:cursor-pointer hover:ring-green-400"
+            "flex h-full w-full items-center justify-between gap-2 rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:ring-green-400"
           }
         >
           <p className={"font-bold text-white"}>
@@ -141,7 +161,7 @@ export default function Home() {
         {/* 네번째 박스*/}
         <div
           className={
-            "hidden h-full w-full items-center justify-between gap-2 rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:cursor-pointer hover:ring-green-400 sm:flex sm:flex-col"
+            "hidden h-full w-full items-center justify-between gap-2 rounded-lg bg-black bg-opacity-50 p-4 shadow-md ring-2 transition hover:ring-green-400 sm:flex sm:flex-col"
           }
         >
           <div className={"p-5 text-center font-bold text-white"}>스킬정보</div>
@@ -234,3 +254,25 @@ export default function Home() {
     </div>
   );
 }
+
+interface DescriptionProps {
+  children: React.ReactNode;
+  href?: string;
+}
+
+const Description = ({ children, href = "/#" }: DescriptionProps) => {
+  return (
+    <div className={"text-xs text-white hover:underline"}>
+      <Link href={href}>
+        <div className={"flex items-center gap-2"}>
+          <div>- {children}</div>
+          {href !== "/#" ? (
+            <ExternalLinkIcon className={"h-3 w-3"} />
+          ) : (
+            <LockIcon className={"h-3 w-3"} />
+          )}
+        </div>
+      </Link>
+    </div>
+  );
+};
