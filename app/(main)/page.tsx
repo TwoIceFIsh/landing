@@ -96,29 +96,39 @@ export default function Home() {
             <p className={"text-white"}>
               2019.01 ~ 2019.03 : 악성프로그램 탐지 프로그램
             </p>
+            <p className={"text-xs text-white"}>
+              - 악성프로그램 정적 분석 프로그램
+            </p>
+            <br />
+            <p className={"text-white"}>2021.03 ~ 2022.05 : SOC Helper</p>
+            <p className={"text-xs text-white"}>
+              - FireEye SIEM IOC 데이터 정제 툴
+            </p>
+            <br />
+            <p className={"text-white"}>2022.01 ~ 2022.03 : 정보보안메일링</p>
+            <p className={"text-xs text-white"}>
+              - 정보보안 조기경보 인텔리전스 시스템
+            </p>
+            <br />
 
             <p className={"text-white"}>
-              2021.03 ~ 2022.05 : 보안관제 분석 보조 시스템
+              2022.05 ~ 2022.12 : CrowdStrike Assist
             </p>
-            <br />
-            <p className={"text-white"}>
-              2022.01 ~ 2022.03 : 정보보안 메일링 시스템
-            </p>
+            <p className={"text-xs text-white"}> - EDR 분석 보조 시스템</p>
 
-            <p className={"text-white"}>
-              2022.05 ~ 2022.12 : EDR 분석 보조 시스템
+            <br />
+            <p className={"text-white"}>2023.01 ~ 2023.06 : SSLM</p>
+            <p className={"text-xs text-white"}>- SSL/TLS 인증서 관리 시스템</p>
+
+            <br />
+            <p className={"text-white"}>2023.06 ~ 2025.12 : AIRA</p>
+            <p className={"text-xs text-white"}>
+              - 美정부기관 AI 질병 탐지 시스템
             </p>
             <br />
-            <p className={"text-white"}>
-              2023.01 ~ 2023.06 : SSL/TLS 인증서 관리 시스템
-            </p>
-            <br />
-            <p className={"text-white"}>
-              2023.06 ~ 2025.12 : 美정부기관 AI 질병 탐지 시스템
-            </p>
-            <p className={"text-white"}>
-              2024.06 ~ 2025.12 : 금융 SNS 플랫폼 - 리치에이블
-            </p>
+
+            <p className={"text-white"}>2024.06 ~ 2025.12 : 리치에이블</p>
+            <p className={"text-xs text-white"}> - 금융 SNS 플랫폼</p>
           </div>
         </div>
         {/* 세번째 박스*/}
