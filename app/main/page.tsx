@@ -11,8 +11,13 @@ export default function Home() {
     <div className="flex flex-col items-center justify-start gap-2 bg-gradient-to-bl from-black to-green-950">
       {/* 메인 */}
       <Header />
+      <h2 className="hero glitch layers p-2" data-text="WWW.CYBER-LUNA.COM">
+        <div>
+          <span>WWW.CYBER-LUNA.COM</span>
+        </div>
+      </h2>
 
-      <div className={"flex w-full flex-col gap-2 p-2 sm:my-10 sm:w-[800px]"}>
+      <div className={"flex w-full flex-col gap-2 p-2 sm:w-[800px]"}>
         {/* 첫번째 박스*/}
         <div
           className={
@@ -247,6 +252,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <h2 className="hero glitch layers p-2" data-text="WWW.CYBER-LUNA.COM">
+        <div>
+          <span>WWW.CYBER-LUNA.COM</span>
+        </div>
+      </h2>
     </div>
   );
 }
