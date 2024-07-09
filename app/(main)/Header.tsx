@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div
       className={
-        "flex w-full flex-row items-center justify-between bg-black bg-gradient-to-bl from-black to-purple-950 px-20"
+        "flex w-full flex-row items-center justify-between bg-black bg-gradient-to-bl from-black to-purple-950 sm:px-20"
       }
     >
       <Image
@@ -17,7 +17,11 @@ const Header = () => {
         height={60}
         className={"rounded-full opacity-80"}
       />
-      <div className={"flex gap-2 font-bold text-white"}>
+      <div
+        className={
+          "flex w-full justify-between gap-2 px-10 font-bold text-white"
+        }
+      >
         <div>
           <Link href={"/"}>홈</Link>
         </div>
@@ -31,7 +35,7 @@ const Header = () => {
           <Link href={"https://github.com/twoicefish"}>깃허브</Link>
         </div>
       </div>
-      <div>
+      <div className={"hidden sm:flex"}>
         <div>ss</div>
       </div>
     </div>
