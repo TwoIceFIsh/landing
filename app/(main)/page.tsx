@@ -90,12 +90,9 @@ export default function Home() {
             <p className={"font-bold text-white"}>프로그래밍</p>
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
-            <p className={"text-white"}>
-              2018.08 ~ 2018.12 : 스마트 팜 제어 시스템
-            </p>
-            <p className={"text-white"}>
-              2019.01 ~ 2019.03 : 악성프로그램 탐지 프로그램
-            </p>
+            <p className={"text-white"}>2018.08 ~ 2018.12 : iFarm</p>
+            <p className={"text-xs text-white"}>- 스마트 팜 제어 시스템</p>
+            <p className={"text-white"}>2019.01 ~ 2019.03 : MalQ</p>
             <p className={"text-xs text-white"}>
               - 악성프로그램 정적 분석 프로그램
             </p>
