@@ -84,7 +84,7 @@ export default function Home() {
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
             <p className={"text-white"}>2024.03 ~ 2024.12 : 그레이 해커</p>
-            <Description>비공개 확동</Description>
+            <Description>비공개 활동</Description>
           </div>
           <div
             className={
