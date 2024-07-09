@@ -141,7 +141,11 @@ export default function Home() {
 
             <br />
             <p className={"text-white"}>2023.06 ~ 2025.12 : AIRA</p>
-            <Description>美정부기관 AI 질병 탐지 시스템</Description>
+            <Description
+              href={"https://gitlab.cyber-luna.com/ecodetect.ai/web-server"}
+            >
+              美정부기관 AI 질병 탐지 시스템
+            </Description>
             <br />
 
             <p className={"text-white"}>2024.06 ~ 2025.12 : 리치에이블</p>
