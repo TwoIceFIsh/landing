@@ -7,9 +7,9 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="flex h-full flex-col items-center justify-start gap-2 sm:mt-10">
+    <div className="flex flex-col items-center justify-start gap-2 bg-gradient-to-bl from-black to-green-950">
       {/* 메인 */}
-      <div className={"flex w-full flex-col gap-2 p-2 sm:w-[800px]"}>
+      <div className={"flex w-full flex-col gap-2 p-2 sm:my-10 sm:w-[800px]"}>
         {/* 첫번째 박스*/}
         <div
           className={
@@ -43,7 +43,7 @@ export default function Home() {
         {/* 두번째 박스*/}
         <div
           className={
-            "flex w-full flex-col items-center justify-between gap-2 rounded-lg bg-black bg-opacity-50 shadow-md sm:flex-row"
+            "flex w-full flex-col items-start justify-between gap-2 rounded-lg bg-black bg-opacity-50 shadow-md sm:flex-row"
           }
         >
           <div
@@ -111,9 +111,7 @@ export default function Home() {
             </Description>
             <br />
             <p className={"text-white"}>2021.03 ~ 2022.05 : SOC Helper</p>
-            <p className={"text-xs text-white"}>
-              <Description>FireEye SIEM IOC 데이터 정제 툴</Description>
-            </p>
+            <Description>FireEye SIEM IOC 데이터 정제 툴</Description>
             <br />
             <p className={"text-white"}>2022.01 ~ 2022.03 : 정보보안메일링</p>
             <Description href={"https://github.com/TwoIceFIsh/RSS-Boho"}>
