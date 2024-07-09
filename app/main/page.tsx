@@ -132,13 +132,17 @@ export default function Home() {
             </Description>
 
             <br />
-            <p className={"text-white"}>2023.01 ~ 2023.06 : C-Checker</p>
+            <p className={"text-white"}>2023.01 ~ 2023.04 : C-Checker</p>
             <Description
               href={"https://github.com/TwoIceFIsh/cloudflare-dns-checker"}
             >
               CloudFlare DNS 관리 시스템
             </Description>
-            <p className={"text-white"}>2023.06 ~ 2023.12 : SSLM</p>
+            <p className={"text-white"}>2023.04 ~ 2023.08 : RAW 로그파서</p>
+            <Description href={"https://gitlab.cyber-luna.com/drm/logparser"}>
+              방화벽 로그 파싱 시스템
+            </Description>
+            <p className={"text-white"}>2023.08 ~ 2023.12 : SSLM</p>
             <Description href={"https://github.com/TwoIceFIsh/sslm"}>
               SSL/TLS 인증서 관리 시스템
             </Description>
