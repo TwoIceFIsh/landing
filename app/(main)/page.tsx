@@ -245,7 +245,7 @@ interface DescriptionProps {
   href?: string;
 }
 
-const Description = ({ children, href = "/#" }: DescriptionProps) => {
+const Description = ({ children, href = "#" }: DescriptionProps) => {
   return (
     <div className={"text-xs text-white hover:underline"}>
       <Link href={href}>
