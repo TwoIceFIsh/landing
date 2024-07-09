@@ -249,7 +249,7 @@ const Description = ({ children, href = "#" }: DescriptionProps) => {
       <Link href={href}>
         <div className={"flex items-center gap-2"}>
           <div>- {children}</div>
-          {href !== "/#" ? (
+          {href !== "#" ? (
             <ExternalLinkIcon className={"h-3 w-3"} />
           ) : (
             <LockIcon className={"h-3 w-3"} />
