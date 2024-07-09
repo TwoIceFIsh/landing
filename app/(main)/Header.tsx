@@ -23,16 +23,20 @@ const Header = () => {
         }
       >
         <div>
-          <Link href={"/"}>홈</Link>
+          <HeaderLink href={"/"}>홈</HeaderLink>
         </div>
         <div>
-          <Link href={"https://www.rocketpunch.com/@ruinaway"}>프로필</Link>
+          <HeaderLink href={"https://www.rocketpunch.com/@ruinaway"}>
+            프로필
+          </HeaderLink>
         </div>
         <div>
-          <Link href={"https://twoicefish-secu.tistory.com"}>블로그</Link>
+          <HeaderLink href={"https://twoicefish-secu.tistory.com"}>
+            블로그
+          </HeaderLink>
         </div>
         <div>
-          <Link href={"https://github.com/twoicefish"}>깃허브</Link>
+          <HeaderLink href={"https://github.com/twoicefish"}>깃허브</HeaderLink>
         </div>
       </div>
       <div className={"hidden sm:flex"}>
@@ -43,3 +47,22 @@ const Header = () => {
 };
 
 export default Header;
+
+interface HeaderProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+export const HeaderLink = ({ children, href }: HeaderProps) => {
+  return (
+    <div
+      className={
+        "w-full cursor-pointer text-nowrap rounded-lg px-2 transition hover:bg-black hover:text-green-500 hover:ring-green-400"
+      }
+    >
+      <Link href={href}>
+        <div>{children}</div>
+      </Link>
+    </div>
+  );
+};
