@@ -62,28 +62,26 @@ export default function Home() {
             <br />
             <p className={"font-bold text-white"}>이글루시큐리티</p>
             <p className={"text-white"}>2019.03 ~ 2020.03 : 해외기술팀</p>
-            <p className={"text-xs text-white"}>- 일본지사 취약점 점검</p>
-            <p className={"text-xs text-white"}>- 한국지사 취약점 점검</p>
+            <Description>일본지사 취약점 점검</Description>
+            <Description>한국지사 취약점 점검</Description>
             <br />
             <p className={"text-white"}>
               2020.03 ~ 2021.03 : 가급 국가기관 사이버안전센터
             </p>
-            <p className={"text-xs text-white"}>- 사고대응 및 침해사고 예방</p>
-            <p className={"text-xs text-white"}>- 산하기관 웹 취약점 점검</p>
-            <p className={"text-xs text-white"}>
-              - 보안현황 하위기관 전파 및 교육
-            </p>
+            <Description>사고대응 및 침해사고 예방</Description>
+            <Description>산하기관 웹 취약점 점검</Description>
+            <Description>보안현황 하위기관 전파 및 교육</Description>
             <br />
             <p className={"text-white"}>2021.03 ~ 2022.05 : S-OIL 보안관제팀</p>
-            <p className={"text-xs text-white"}>- 보안관제 및 침해사고 예방</p>
-            <p className={"text-xs text-white"}>- 정보보안 인텔리전스 활동</p>
+            <Description>보안관제 및 침해사고 예방</Description>
+            <Description>정보보안 인텔리전스 활동</Description>
             <br />
             <p className={"font-bold text-white"}>그라비티</p>
             <p className={"text-white"}>2022.05 ~ 2024.03 : 정보보안Unit</p>
-            <p className={"text-xs text-white"}>- 대외 취약점 분석</p>
-            <p className={"text-xs text-white"}>- EDR/백신/CloudFlare 운영</p>
-            <p className={"text-xs text-white"}>- 침해사고 대응 및 분석</p>
-            <p className={"text-xs text-white"}>- 정보보안 인텔리전스 활동</p>
+            <Description>대외 취약점 분석</Description>
+            <Description>EDR/백신/CloudFlare 운영</Description>
+            <Description>침해사고 대응 및 분석</Description>
+            <Description>정보보안 인텔리전스 활동</Description>
             <br />
             <p className={"font-bold text-white"}>사이버루나</p>
             <p className={"text-white"}>2024.03 ~ 2024.12 : 그레이 해커</p>
@@ -262,7 +260,7 @@ const Description = ({ children, href = "#" }: DescriptionProps) => {
   return (
     <>
       {href !== "#" ? (
-        <div className={"text-xs text-white hover:underline"}>
+        <div className={"text-sm text-white hover:underline"}>
           <Link href={href}>
             <div className={"flex items-center gap-2"}>
               <div>- {children}</div>
@@ -271,7 +269,7 @@ const Description = ({ children, href = "#" }: DescriptionProps) => {
           </Link>
         </div>
       ) : (
-        <div className={"text-xs text-white"}>
+        <div className={"text-sm text-white"}>
           <div className={"flex items-center gap-2"}>
             <div>- {children}</div>
             <LockIcon className={"h-3 w-3"} />
