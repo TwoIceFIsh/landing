@@ -245,18 +245,25 @@ interface DescriptionProps {
 
 const Description = ({ children, href = "#" }: DescriptionProps) => {
   return (
-    <div className={"text-xs text-white hover:underline"}>
-      <Link href={href}>
-        <div className={"flex items-center gap-2"}>
-          <div>- {children}</div>
-          {href !== "#" ? (
-            <ExternalLinkIcon className={"h-3 w-3"} />
-          ) : (
-            <LockIcon className={"h-3 w-3"} />
-          )}
+    <>
+      {href !== "#" ? (
+        <div className={"text-xs text-white hover:underline"}>
+          <Link href={href}>
+            <div className={"flex items-center gap-2"}>
+              <div>- {children}</div>
+              <ExternalLinkIcon className={"h-3 w-3"} />
+            </div>
+          </Link>
         </div>
-      </Link>
-    </div>
+      ) : (
+        <div className={"text-xs text-white"}>
+          <div className={"flex items-center gap-2"}>
+            <div>- {children}</div>
+            <LockIcon className={"h-3 w-3"} />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
