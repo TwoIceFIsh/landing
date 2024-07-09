@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Orbit } from "next/font/google";
 
-const inter = Noto_Sans({
+const inter = Orbit({
   weight: "400",
   subsets: ["latin"],
 });
