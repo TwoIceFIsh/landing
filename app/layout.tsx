@@ -6,8 +6,11 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "사이버루나 - 이병호",
-  description: "정보보안 및 개발 분야 활동",
+  title: "사이버루나",
+  description: "정보보안전문가/프로그래머 이병호",
+  openGraph: {
+    images: "/first.png",
+  },
 };
 
 export default function RootLayout({
