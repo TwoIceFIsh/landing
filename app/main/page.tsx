@@ -260,14 +260,14 @@ const Description = ({ children, href = "#" }: DescriptionProps) => {
   return (
     <>
       {href !== "#" ? (
-        <div className={"text-sm text-white hover:underline"}>
-          <Link href={href}>
+        <Link href={href}>
+          <div className={"text-sm text-white hover:underline"}>
             <div className={"flex items-center gap-2"}>
               <div>- {children}</div>
               <ExternalLinkIcon className={"h-3 w-3"} />
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
       ) : (
         <div className={"text-sm text-white"}>
           <div className={"flex items-center gap-2"}>
