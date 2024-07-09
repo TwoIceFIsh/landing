@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mt-10 flex h-full flex-col items-center justify-start gap-2">
+    <div className="flex h-full flex-col items-center justify-start gap-2 sm:mt-10">
       {/* 메인 */}
       <div className={"flex w-full flex-col gap-2 p-2 sm:w-[800px]"}>
         {/* 첫번째 박스*/}
