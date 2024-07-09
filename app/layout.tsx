@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "사이버루나",
   description: "정보보안전문가/프로그래머 이병호",
   openGraph: {
-    images: "/first.png",
+    images: "https://www.cyber-luna.com/first.png",
   },
 };
 
