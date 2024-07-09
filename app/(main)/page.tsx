@@ -218,27 +218,9 @@ export default function Home() {
                 height={60}
               />
             </div>
-            <div
-              className={
-                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
-              }
-            >
-              DRM
-            </div>
-            <div
-              className={
-                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
-              }
-            >
-              SIEM
-            </div>
-            <div
-              className={
-                "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
-              }
-            >
-              백신
-            </div>
+            <Logo>DRM</Logo>
+            <Logo>SIEM</Logo>
+            <Logo>백신</Logo>
           </div>
           <div className={"flex w-full items-center justify-start gap-5 p-2"}>
             <div className={"flex rounded-full bg-white p-4"}>
@@ -276,6 +258,22 @@ const Description = ({ children, href = "/#" }: DescriptionProps) => {
           )}
         </div>
       </Link>
+    </div>
+  );
+};
+
+interface logoProps {
+  children: React.ReactNode;
+}
+
+const Logo = ({ children }: logoProps) => {
+  return (
+    <div
+      className={
+        "flex h-24 w-24 items-center justify-center rounded-full bg-white p-4 text-2xl font-bold"
+      }
+    >
+      {children}
     </div>
   );
 };
