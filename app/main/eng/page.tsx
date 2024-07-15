@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ExternalLinkIcon, LockIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import "./my.css";
+import "@/app/(main)/main.css";
 import Header from "@/app/main/eng/Header";
 
 export default function Home() {

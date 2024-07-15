@@ -5,7 +5,7 @@ import { ExternalLinkIcon, LockIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Header from "@/app/main/Header";
-import "./my.css";
+import "@/app/(main)/main.css";
 
 export default function Home() {
   return (

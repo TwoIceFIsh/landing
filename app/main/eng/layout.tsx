@@ -23,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "h-full min-h-screen")}>
-        {children}
-      </body>
+      <body className={cn(inter.className, "h-full")}>{children}</body>
     </html>
   );
 }
