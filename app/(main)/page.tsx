@@ -26,9 +26,8 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className={"text-center text-red-600"}>
-        Access to this network is restricted and monitored.
-        <br />
+      <div className={"text-center text-green-600"}>
+        Log in and check resume
       </div>
     </div>
   );
