@@ -261,7 +261,7 @@ export default function Home() {
             </div>
             <Logo>DRM</Logo>
             <Logo>SIEM</Logo>
-            <Logo>백신</Logo>
+            <Logo>VACCINE</Logo>
           </div>
           <div className={"flex w-full items-center justify-start gap-5 p-2"}>
             <div className={"flex rounded-full bg-white p-4"}>
