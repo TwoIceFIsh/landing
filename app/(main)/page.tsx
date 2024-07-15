@@ -27,7 +27,7 @@ const Page = () => {
         </div>
       </div>
       <div className={"text-center text-green-600"}>
-        Log in and check resume
+        Click icon and check resume
       </div>
     </div>
   );
