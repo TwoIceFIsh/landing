@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className={"flex h-full flex-col"}>
+    <div>
       <div className={"hero-container"}></div>
       <div className="hero-container flex h-full flex-col justify-between">
         <div className="environment"></div>
