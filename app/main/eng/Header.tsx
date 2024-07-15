@@ -28,13 +28,13 @@ const Header = () => {
         </Link>
         <div className={"flex w-full justify-between text-center"}>
           <HeaderLink href={"https://www.rocketpunch.com/@ruinaway"}>
-            프로필
+            Profile
           </HeaderLink>
           <HeaderLink href={"https://twoicefish-secu.tistory.com"}>
-            블로그
+            Blog
           </HeaderLink>
-          <HeaderLink href={"https://github.com/twoicefish"}>깃허브</HeaderLink>
-          <HeaderLink href={"/main/eng"}>
+          <HeaderLink href={"https://github.com/twoicefish"}>GitHub</HeaderLink>
+          <HeaderLink href={"/main"}>
             <LanguagesIcon />
           </HeaderLink>
         </div>

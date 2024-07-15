@@ -19,7 +19,7 @@ const Page = () => {
             </div>
             <div className={"flex h-16 w-full items-end justify-center"}>
               <Link
-                href={"/main"}
+                href={"/main/eng"}
                 className={
                   "glowing-effect rounded-full bg-white font-bold text-black opacity-70"
                 }
