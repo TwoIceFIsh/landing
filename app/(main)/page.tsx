@@ -27,7 +27,7 @@ const Page = () => {
         </div>
       </div>
       <div className={"text-center text-green-600"}>
-        Click icon and check resume
+        Please, Press the button to get information.
       </div>
     </div>
   );
