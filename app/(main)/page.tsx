@@ -1,19 +1,20 @@
 import React from "react";
-import "@/app/(main)/main.css";
-import { PowerIcon } from "lucide-react";
 import Link from "next/link";
+import "@/app/(main)/main.css";
+import "@/app/globals.css";
+import { PowerIcon } from "lucide-react";
 
 const Page = () => {
   return (
-    <div>
-      <div className={"hero-container"}></div>
-      <div className="hero-container flex h-full flex-col justify-between">
+    <div className={"grid w-full grid-rows-3 items-center"}>
+      <div className={"text-center"}></div>
+      <div className="hero-container row-start-2">
         <div className="environment"></div>
-        <h2 className="hero glitch layers" data-text="WWW.CYBER-LUNA.COM">
+        <div className="hero glitch layers" data-text="WWW.CYBER-LUNA.COM">
           <div>
             <span>WWW.CYBER-LUNA.COM</span>
           </div>
-          <div className={"flex h-16 w-full items-end justify-center"}>
+          <div className={"flex h-16 items-end justify-center"}>
             <Link
               href={"/main/eng"}
               className={
@@ -23,9 +24,12 @@ const Page = () => {
               <PowerIcon className={"cursor-pointer"} />
             </Link>
           </div>
-        </h2>
+        </div>
       </div>
-      <div className={"hero-container"}></div>
+      <div className={"text-center text-red-600"}>
+        Access to this network is restricted and monitored.
+        <br />
+      </div>
     </div>
   );
 };

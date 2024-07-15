@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { cn } from "@/lib/utils";
-import { Nanum_Gothic_Coding } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 
-const inter = Nanum_Gothic_Coding({
-  weight: "400",
+const fontSans = FontSans({
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "h-full min-h-screen")}>
+      <body
+        className={cn(
+          "h-full min-h-screen w-full font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
         {children}
       </body>
     </html>
