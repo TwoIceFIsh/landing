@@ -20,13 +20,11 @@ export const metadata: Metadata = {
     images: "https://www.cyber-luna.com/first.png",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  plausible.trackPageview();
   return (
     <html lang="en">
       <body
