@@ -26,7 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  plausible.enableAutoPageviews();
+  plausible.trackPageview();
   return (
     <html lang="en">
       <body
